@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+html{
+    background-image: url(https://media.freestocktextures.com/cache/4d/e6/4de6261b970deb804e557b9bb1dd44ad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#title-area{
+    text-align: center;
+}
+.textinput{
+    width: 100%;
+}
+#about-area input{
+    display: block;
+    clear: left;
+    float: right;
+}
+#salary-area input{
+    float: right;
+}
+button{
+    height: 50px;
+    width: 100%;
+}
+form{
+    width: 25%;
+    padding: 30px;
+    background-color: #F8ECC2;
+}
+input:focus{
+    border-color: blue;
+}

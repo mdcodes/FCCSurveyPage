@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="main">
+            <form id="survey-form">
+                <div id="title-area">
+                    <h1 id="title">Population Survey</h1>
+                    <p id="description"><em>For internal use only</em></p>
+                </div>
+
+                <div id="about-area">
+                    <fieldset>
+                        <legend>About You</legend>
+                        <label for="fullname" id="name-label">Name</label>
+                        <input type="text" id="name" class="textinput" name="fullname" required placeholder="Your Name"/> <br>
+
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" id="email" class="textinput" name="email" placeholder="Your Email" required/> <br>
+
+                        <label for="num" id="number-label">Age</label>
+                        <input type="number" id="number" class="textinput" name="num" min="1" max="100" placeholder="Your Age">
+                    </fieldset>
+                </div>
+
+                <div id="province-area">
+                    <fieldset>
+                        <legend>Province/Territory</legend>
+                        <select id="dropdown" class="textinput" >
+                            <option value="default" disabled>Make a selection</option>
+                            <optgroup label="Provinces">
+                                <option value="AB">Alberta</option>
+                                <option value="BC">British Columbia</option>
+                                <option value="MB">Manitoba</option>
+                                <option value="NB">New Brunswick</option>
+                                <option value="NF">Newfoundland and Labrador</option>
+                                <option value="NS">Nova Scotia</option>
+                                <option value="ON">Ontario</option>
+                                <option value="PEI">Prince Edward Island</option>
+                                <option value="QC">Quebec</option>
+                                <option value="SK">Saskatchewan</option>
+                            </optgroup>
+                            <optgroup label="Territories">
+                                <option value="NWT">Northwest Territories</option>
+                                <option value="NU">Nunavut</option>
+                                <option value="YK">Yukon</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div id="salary-area">
+                    <fieldset>
+                        <legend>Salary Range</legend>
+
+                        <label for="r1">Less than $30000</label>
+                        <input type="radio" name="salary" id="r1" value="<30000"/>
+                        <br>
+
+                        <label for="r2">Greater than $30000, less than $100000</label>
+                        <input type="radio" name="salary" id="r2" value=">30000 and <100000"/>
+                        <br>
+
+                        <label for="r3">Greater than $100000</label>
+                        <input type="radio" name="salary" id="r3" value=">100000"/>
+                        <br>
+
+                        <label for="r4">Prefer not to Say</label>
+                        <input type="radio" name="salary" id="r4" value="Prefer not to say"/>
+                    </fieldset>
+                    <br>
+                </div>
+                <fieldset>
+                    <legend>How did you hear about this survey?</legend>
+
+                    <label for="fb">Facebook</label>
+                    <input type="checkbox" name="fb" value="Facebook"/>
+
+                    <label for="tw">Twitter</label>
+                    <input type="checkbox" name="tw" value="Twitter"/>
+
+                    <label for="li">LinkedIn</label>
+                    <input type="checkbox" name="li" value="LinkedIn"/>
+
+                    <label for="re">Reddit</label>
+                    <input type="checkbox" name="re" value="Reddit"/>
+                </fieldset>
+
+                <div id="comments-area">
+                    <fieldset>
+                        <legend>Comments/Questions</legend>
+                        <textarea id="comments" class="textinput"></textarea>
+                    </fieldset>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>
